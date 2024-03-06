@@ -8,7 +8,12 @@ buildscript {
         classpath "org.graceframework:grace-gradle-plugin:$graceVersion"
         classpath "com.github.erdi:webdriver-binaries-gradle-plugin:3.2"
         classpath "org.graceframework.plugins:asset-pipeline-gradle:5.2.0"
+        classpath "org.graceframework.plugins:views-gradle:5.2.0"
     }
+}
+
+ext {
+    viewComponentsVersion = '0.0.2'
 }
 
 version projectVersion
@@ -61,6 +66,8 @@ dependencies {
     implementation "org.graceframework.plugins:scaffolding"
     implementation "org.graceframework.plugins:fields"
     implementation "org.graceframework.plugins:events"
+    implementation "org.graceframework.plugins:views-markup:5.2.0"
+    implementation "org.graceframework.plugins:view-components:$viewComponentsVersion"
     implementation "org.graceframework.plugins:hibernate5"
     implementation "org.hibernate:hibernate-core:5.6.15.Final"
     implementation "org.graceframework:grace-plugin-gsp"
