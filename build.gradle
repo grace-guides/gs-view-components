@@ -13,7 +13,7 @@ buildscript {
 }
 
 ext {
-    viewComponentsVersion = '0.0.2'
+    viewComponentsVersion = '0.1.0'
 }
 
 version projectVersion

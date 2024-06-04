@@ -4,8 +4,8 @@ This guide show you how to use view components plugin to create reusable, testab
 
 ## Grace Version
 
-- Grace Framework **2022.2.0**
-- Grace View Components **0.0.2**
+- Grace Framework **2022.2.4**
+- Grace View Components **0.1.0**
 
 ## Usage
 
@@ -20,7 +20,7 @@ buildscript {
     }
     dependencies {
         classpath "org.graceframework:grace-gradle-plugin:$graceVersion"
-        classpath "org.graceframework.plugins:views-gradle:5.2.0"
+        classpath "org.graceframework.plugins:views-gradle:5.2.4"
     }
 }
 
@@ -32,8 +32,8 @@ repositories {
 }
 
 dependencies {
-    implementation "org.graceframework.plugins:views-markup:5.2.0"
-    implementation "org.graceframework.plugins:view-components:0.0.2"
+    implementation "org.graceframework.plugins:views-markup:5.2.4"
+    implementation "org.graceframework.plugins:view-components:0.1.0"
 }
 
 ```
@@ -117,7 +117,8 @@ ${new ButtonComponent(name: 'Primary Button', cssClasses: 'btn-primary').render(
 // Using tag in GSP
 <vc:render component="button" name="View Components" cssClasses="btn-success" icon="star" />
 
-// Custom namespace for components supports in 0.0.2
+// Custom namespace for components since v0.0.2
+// I'm sorry, it's not supported by Grails, you can reply and make a request if you are interested, go to https://github.com/grails/grails-gsp/issues/324
 <vc:button type="button" name="Icon Button" cssClasses="btn-primary" icon="box" />
 
 <vc:card title="My First Component" content="This is the first Card" />
